@@ -1,0 +1,131 @@
+@font-face{
+	font-family:karma;
+	src: url(fonts/Karma-Regular.ttf);
+}
+
+@font-face{
+	font-family:karma-bold;
+	src: url(fonts/Karma-Bold.ttf)
+}
+
+body{
+	color: rgb(255, 219, 16);
+	background-color: #000d70;
+	background: #000d70;
+	background: content-box linear-gradient(0deg, rgba(0, 13, 112, 1) 0%, rgba(4, 0, 255, 1) 100%);
+}
+
+/*#region Header*/
+
+h1 h2{
+	font-family: karma-bold;
+}
+
+p{
+	font-family: karma;
+}
+
+header{
+	height: 400px;
+	padding-top: 7%;
+	padding-bottom: 5%;
+	display: grid;
+	grid-template-areas: 
+	"logo desc"
+	"logo CTA";
+
+}
+
+.Header-Logo{
+	background: url("imagenes/neptune.png") no-repeat center;	
+	grid-area: logo;
+	height: 300px;
+	width: 700px;
+}
+
+.Header-Logo h1{
+	position: relative;
+	font-size: 5em;
+	top: 48px;
+ 	left: 31.5%;
+}
+
+.Header-Logo h3{
+	color: white;
+	font-size: 35px;
+  	position: relative;
+  	top: -7%;
+  	left: 18%;
+}	
+
+.Header-Desc {
+	grid-area: desc;
+	width: 800px;
+	color: white;
+	font-size: 35px;
+  	position: relative;
+  	top: 0;
+  	left: 0%;
+}
+
+.CTA{
+	grid-area: CTA;
+}
+
+/*#endregion Header*/
+
+
+/*
+.VHS-Card{
+	display: grid;
+	grid-template-columns:"imagen | imagen texto | texto";
+	background-color: blue;
+}
+
+.VHS-Card img{
+	grid-area: imagen;
+}
+
+.texto{
+	grid-area: texto;
+}
+
+*/
+/*
+.Focus-Carrousel{
+	height:400px;
+	display: grid;
+	grid-template-columns: [first] 33% [second] 33% [third] 33%
+	
+}
+
+.FC-Card{
+	text-align:center;
+	background-image: url("imagenes/guy.png");
+}
+
+.reservar-section{
+	display:grid;
+	grid-template-columns: [first] 50% [second] 50%
+}
+
+.neptune{
+	width:300px;
+	background-image: url("imagenes/neptune.png");
+	background-repeat: no-repeat;
+}
+
+.reservar-card{
+	padding:10px;
+	background-color: blue;
+}
+
+.info-about{
+	padding:10px;
+	background-color:blue;
+}
+
+footer{
+	background-color:blue;
+}
+*/
